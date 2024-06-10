@@ -1,0 +1,31 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
+    font-family: 'Rubik', sans-serif;
+    background: whitesmoke;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.text-decoration-none {
+    text-decoration: none!important;
+}
+
+.icon-width {
+    width: 2rem;
+}
+
+.bg-color1 {
+    background-color: lightslategrey !important;
+}
+
+.bg-color2 {
+    background-color: whitesmoke !important;
+}
