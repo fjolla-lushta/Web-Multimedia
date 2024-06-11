@@ -87,6 +87,131 @@
             </div>
         </div>
     </nav>
-    
+    <div class="container my-5">
+        <canvas id="pixi-canvas" width="800" height="600"></canvas>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="box1">
+                <div class="top1">
+                    <div class="cssload-loader">Loading</div>
+                </div>
+                <div class="row after-loading">
+                    <div class="col-3">
+                        <img class="player-image" src="https://img.a.transfermarkt.technology/portrait/header/401173-1623778009.jpg?lm=1" width="100" height="100" alt="">
+                    </div>
+                    <div class="col-3 pt-2">
+                        <h3 class="player-name">SANCHO</h3>
+                        <h5>Right Wing</h5>
+                    </div>
+                    <div class="col-3">
+                        <img class="player-image" src="https://tmssl.akamaized.net/images/wappen/normquad/985.png?lm=1457975903" width="100" height="100" alt="">
+                    </div>
+                    <div class="col-3 pt-2">
+                        <h3 class="price">£76.50m</h3>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="box1">
+                <h1 class="top1" id="record">Record Transfers</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer container">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 center">
+            <img src="gallery/leagues.png" alt="top 5 leagues" class="img-fluid">
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="list-unstyled">
+                    <i class="fas fa-external-link-alt h2"><span class="h2"> Links</span></i>
+                    <ul class="style-type">
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a href="#">
+                            <li>About Us</li>
+                        </a>
+                        <a href="#">
+                            <li>Contact Us</li>
+                        </a>
+                        <a href="#">
+                            <li>News</li>
+                        </a>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="list-unstyled">
+                    <i class="fas fa-map-marker-alt h2"><span class="h2">Address</span></i>
+                    <p class="mb-1">St. Mbreteresha Teute</p>
+                    <p>Mitrovice, Kosove</p>
+                    <p>40000</p>
+                </div>
+                <br>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="list-unstyled">
+                    <i class="fas fa-envelope"><span class="h2">Email</span></i>
+                    <p>info@trasfermarkt.rks</p>
+                    <br>
+                    <i class="fas fa-phone"><span class="h2">Phone</span></i>
+                    <p>+383 44 450 150</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright copyright text-center py-3">© 2024 Copyright:
+            <a href="https://facebook.com/"> MitrovicaTeam.com</a>
+        </div>
+    </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.8/pixi.min.js"></script>
+<script>
+    $(document).ready(function() {
+        if ($(window).width() > 991) {
+            $('.navbar-light .d-menu').hover(function() {
+                $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+            }, function() {
+                $(this).find('.sm-menu').first().stop(true, true).delay(120).slideUp(100);
+            });
+        }
+        const app = new PIXI.Application({
+            view: document.getElementById('pixi-canvas'),
+            width: 800,
+            height: 600,
+            backgroundColor: 0x1099bb
+        });
+
+        const graphics = new PIXI.Graphics();
+        graphics.beginFill(0xde3249);
+        graphics.drawCircle(100, 100, 50);
+        graphics.endFill();
+
+        app.stage.addChild(graphics);
+
+        function animate() {
+            graphics.x += 1;
+            graphics.y += 1;
+            if (graphics.x > app.view.width) {
+                graphics.x = 0;
+            }
+            if (graphics.y > app.view.height) {
+                graphics.y = 0;
+            }
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    });
+</script>
 </html>
