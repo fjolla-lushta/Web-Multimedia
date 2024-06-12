@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Syncopate:700&display=swap');
+
+
+body {
+  font-family: Syncopate;
+ background-color: black;
+  color: #FFF;
+}
+
+
+
+.left-top, .right-top, .left-bottom, .right-bottom {
+  position: fixed;
+  margin: 20px;
+  z-index: 1;
+}
+
+.left-top {
+  left: 0;
+  top: 0;
+}
+
+.right-top {
+  right: 0;
+  top: 0;
+}
+
+.left-bottom {
+  left: 0;
+  bottom: 0;
+}
+
+.right-bottom {
+  right: 0;
+  bottom: 0;
+}
+
+/*--- Slider ---*/
+
+.slider-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding: 0;
+}
+
+.slider {
+  margin-left: 25vw;
+}
+
+.slide {
+  float: left;
+  display: block;
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.slide-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  margin-top: -1em;
+  font-size: 7vw;
+}
+
+.slide-img {
+  position: absolute;
+  max-height: 70%;
+  margin: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
