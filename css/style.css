@@ -13,6 +13,10 @@ body {
 .dropdown-toggle::after {
     display: none;
 }
+.zoomed {
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
+}
 
 .text-decoration-none {
     text-decoration: none!important;
