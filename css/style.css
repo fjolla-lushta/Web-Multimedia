@@ -29,3 +29,303 @@ body {
 .bg-color2 {
     background-color: whitesmoke !important;
 }
+
+.text-color {
+    color: black !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    color: black !important;
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+
+.img-fluid {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.foto-footer {
+    width: 400px;
+    margin: auto;
+}
+
+.footer {
+    background: rgb(196, 198, 199) !important;
+    padding: 0;
+    margin: 0;
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.h2 {
+    font-size: 1.5rem;
+    color: rgb(98, 99, 99);
+    font-weight: bold;
+}
+
+.style-type {
+    list-style-type: none;
+}
+
+.list-unstyled {
+    font-size: 1.2rem;
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+a:active {
+    text-decoration: none;
+    color: darkturquoise;
+}
+
+.address {
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+}
+
+.copyright {
+    background: lightslategray;
+}
+
+.imgBx {
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+}
+
+#audio {
+    width: 600px;
+}
+
+.texti {
+    font-size: 2.625rem;
+    line-height: 1;
+    font-family: "Inter", "Odoo Unicode Support Noto", sans-serif;
+}
+
+.lead {
+    font-family: "Inter", "Odoo Unicode Support Noto", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.fw_extralight {
+    font-weight: 100;
+}
+
+.s_o_number .title {
+    padding-top: 0.2em;
+    font-size: 4em;
+    line-height: 1.1;
+    color: #875a7b;
+}
+
+.s_o_number {
+    text-align: center;
+    font-family: "Inter", "Odoo Unicode Support Noto", sans-serif;
+}
+
+.s_o_number .title,
+.s_o_number .desc {
+    display: block;
+}
+
+.mt0 {
+    font-family: "Inter", "Odoo Unicode Support Noto", sans-serif;
+}
+
+.img-fluid,
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.rounded-circle,
+.fa.rounded-empty-circle,
+.img-circle {
+    border-radius: 50% !important;
+}
+
+.box {
+    border: 3px solid rgb(16, 16, 180);
+}
+
+.top1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(16, 16, 180);
+}
+#record{
+    text-align: center;
+}
+.price{
+margin-top: 30px;
+}
+.player-name{
+margin-top: 15px;
+}
+.player-image{
+margin-top: 10px;
+}
+.player-pic {
+    border-radius: 50% !important;
+    width: 30px;
+    height: 30px;
+}
+
+
+.cssload-loader {
+width: 244px;
+height: 49px;
+line-height: 49px;
+/* text-align: center;
+position: absolute;
+left: 50%; */
+transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+font-family: helvetica, arial, sans-serif;
+text-transform: uppercase;
+font-weight: 900;
+font-size:18px;
+color: rgb(206,66,51);
+letter-spacing: 0.2em;
+}
+.cssload-loader::before, .cssload-loader::after {
+content: "";
+display: block;
+width: 15px;
+height: 15px;
+background: rgb(206,66,51);
+
+animation: cssload-load 0.81s infinite alternate ease-in-out;
+    -o-animation: cssload-load 0.81s infinite alternate ease-in-out;
+    -ms-animation: cssload-load 0.81s infinite alternate ease-in-out;
+    -webkit-animation: cssload-load 0.81s infinite alternate ease-in-out;
+    -moz-animation: cssload-load 0.81s infinite alternate ease-in-out;
+}
+.cssload-loader::before {
+top: 0;
+}
+.cssload-loader::after {
+bottom: 0;
+}
+
+
+
+@keyframes cssload-load {
+0% {
+    left: 0;
+    height: 29px;
+    width: 15px;
+}
+50% {
+    height: 8px;
+    width: 39px;
+}
+100% {
+    left: 229px;
+    height: 29px;
+    width: 15px;
+}
+}
+
+@-o-keyframes cssload-load {
+0% {
+    left: 0;
+    height: 29px;
+    width: 15px;
+}
+50% {
+    height: 8px;
+    width: 39px;
+}
+100% {
+    left: 229px;
+    height: 29px;
+    width: 15px;
+}
+}
+
+@-ms-keyframes cssload-load {
+0% {
+    left: 0;
+    height: 29px;
+    width: 15px;
+}
+50% {
+    height: 8px;
+    width: 39px;
+}
+100% {
+    left: 229px;
+    height: 29px;
+    width: 15px;
+}
+}
+
+@-webkit-keyframes cssload-load {
+0% {
+    left: 0;
+    height: 29px;
+    width: 15px;
+}
+50% {
+    height: 8px;
+    width: 39px;
+}
+100% {
+    left: 229px;
+    height: 29px;
+    width: 15px;
+}
+}
+
+@-moz-keyframes cssload-load {
+0% {
+    left: 0;
+    height: 29px;
+    width: 15px;
+}
+50% {
+    height: 8px;
+    width: 39px;
+}
+100% {
+    left: 229px;
+    height: 29px;
+    width: 15px;
+}
+}
